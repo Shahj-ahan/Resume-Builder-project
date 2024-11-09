@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    background-color: #fafafa;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+h2, h3, h4 {
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+input[type="text"], input[type="email"], textarea, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #555;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.resume-preview {
+    flex: 1;
+    padding: 20px;
+    background-color: #fefefe;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.resume-preview h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.resume-preview h3 {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 5px;
+}
+
+.resume-preview .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #555;
+}
+
+.resume-preview h4 {
+    font-size: 1.1em;
+    color: #4CAF50;
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.resume-preview p {
+    color: #555;
+    margin: 5px 0;
+    line-height: 1.6;
+}

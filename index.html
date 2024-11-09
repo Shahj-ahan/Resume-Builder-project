@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h1>Professional Resume Builder</h1>
+            <input type="file" id="photo" accept="image/*">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="text" id="jobTitle" placeholder="Job Title">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="phone" placeholder="Phone">
+            <input type="text" id="location" placeholder="Location">
+            <h2>Education</h2>
+            <textarea id="education" placeholder="List your education details"></textarea>
+            <h2>Work Experience</h2>
+            <textarea id="workExperience" placeholder="Describe your work experience"></textarea>
+            <h2>Projects</h2>
+            <textarea id="projects" placeholder="Mention projects you have worked on"></textarea>
+            <h2>Links</h2>
+            <input type="text" id="links" placeholder="Add links like LinkedIn or portfolio">
+            <button onclick="generateResume()">Generate Resume</button>
+            <button onclick="downloadResume()">Download Resume</button>
+        </div>
+        <div class="resume-preview" id="resume-preview">
+            <img id="preview-photo" alt="Profile Photo" class="profile-photo">
+            <h2 id="preview-name"></h2>
+            <h3 id="preview-jobTitle"></h3>
+            <div class="contact-info">
+                <p id="preview-email"></p>
+                <p id="preview-phone"></p>
+                <p id="preview-location"></p>
+            </div>
+            <h4>Education</h4>
+            <p id="preview-education"></p>
+            <h4>Work Experience</h4>
+            <p id="preview-workExperience"></p>
+            <h4>Projects</h4>
+            <p id="preview-projects"></p>
+            <h4>Links</h4>
+            <p id="preview-links"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
